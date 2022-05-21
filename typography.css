@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'jeko-regularregular';
+    src: url('fonts/jeko_regular-webfont.woff2') format('woff2'),
+         url('fonts/jeko_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jeko-blackregular';
+    src: url('jeko_black-webfont.woff2') format('woff2'),
+         url('jeko_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jeko-mediumregular';
+    src: url('jeko_medium-webfont.woff2') format('woff2'),
+         url('jeko_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --navtext: 'jeko-regularregular';
+    --header: 'jeko-black';
+    --product-name: 'jeko-mediumregular';
+}
+
+/* Nav Bar */
+.nav-text {
+    font-family: var(--navtext);
+    font-size: 18px;
+}
+
+.btn {
+   font-family: var(--navtext);
+   font-size: 22px;
+}
+
+/* Best Sellers */
+
+.header {
+    font-family: var(--header);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

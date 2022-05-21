@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
-<!-- Nav Bar -->
-    <div id="menu">
-        <img class="logo"  src="/images/bgamlogo-04.png" alt="logo">
-        <a id="icons" class="lnr lnr-magnifier"></a> 
-        <a id="icons" class="lnr lnr-cart"></a> 
-        <ul>
-            <li><a href="#account">Account</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#wishlist">Wishlist</a></li>
+<!-- Nav Bar --> 
+    <nav>
+        <ul class="header">
+            <li class="li-left"><a class="lnr lnr-magnifier icon" href="#"></a></li>
+            <li class="li-center"><img class="logo"  src="/images/blackarroww-04.png" alt="logo"></li>
+            <li class="li-right"><a class="lnr lnr-cart icon" href="#"></a></li>
         </ul>
-        <button type="button">Cart</button>
-    </div>  
+        <ul class="nav-text">
+            <li><a href="#account">ACCOUNT</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#wishlist">WISHLIST</a></li>
+        </ul>
+    </nav>  
 
-    <img id="center" class="banner" src="images/desktop-01.jpg" width="70%" alt="banner">
-    <br>
-    <button id="center" type="button">Shop Now</button>
+    <main>
+        <img class="center" class="banner" src="images/desktop-01.jpg" width="70%" alt="banner">
+        <br>
+        <button class="center btn"><a href="#">SHOP NOW</a></button>
+
+<!-- Best Sellers -->
+        <div class="container">
+            <h1 class="header">BEST SELLERS</h1>
+            <button class="arrow"><span class="lnr lnr-arrow-left icon"></span></button>
+            <button class="arrow"><span class="lnr lnr-arrow-right icon"></span></button>
+        </div>
+                <div>
+                    <h1>Tapestry<h1>
+                    <!-- <img src="/images/tapestry.png"     alt=""> -->
+                    <button class="add-btn" href="#">Add Cart $110.47</button>
+                </div>     
+    </main>
+
+
 </body>
 </html>

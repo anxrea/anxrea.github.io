@@ -1,0 +1,23 @@
+:root {
+    --color-red: #AF2323;
+    --bg-color: #efe9df;
+    --text-white: #fff;
+    --text-black: black;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.btn {
+    background-color: var(--color-red);
+    color: var(--text-white);
+}
+
+a {
+    color: var(--text-black);
+}
+
+main > button > a {
+    color: var(--text-white);
+}

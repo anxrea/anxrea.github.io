@@ -1,41 +1,12 @@
-body {
-    background-color: #efe9df;
+/* html {
+    box-sizing: border-box;
 }
 
-/* Nav Bar */
-.logo {
-    display:  block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50mm;
-}
+*, *::before, *::after {
+    box-sizing: inherit;
+} */
 
-ul {
-    list-style-type: none;
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-#menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#center {
-    display:  block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-
+@import url(typography.css);
+@import url(colours.css);
+@import url(layout.css);
 
