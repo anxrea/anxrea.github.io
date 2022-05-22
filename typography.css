@@ -39,10 +39,42 @@
 }
 
 /* Best Sellers */
-
-.header {
+.container h1 {
     font-family: var(--header);
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.product-card header {
+    font-family: var(--navtext);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.addtocart-btn {
+    font-family: var(--navtext);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.outer1 h1 {
+    font-family: var(--header);
+}
+
+/* .header {
+    font-family: var(--header);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-2 button {
+    font-family: var(--navtext);
+    font-size: 16px;
+}
+
+.product-name {
+    font-family: var(--navtext);
+    text-transform: uppercase;
+} */

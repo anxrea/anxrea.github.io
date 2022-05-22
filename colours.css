@@ -21,3 +21,25 @@ a {
 main > button > a {
     color: var(--text-white);
 }
+
+.product-card {
+    background-color: var(--text-white);
+}
+
+.addtocart-btn {
+    background-color: var(--text-black);
+    color: var(--text-white);
+}
+
+/* .card-2 {
+    background-color: var(--text-white);
+}
+
+.card-2 button {
+    background-color: var(--text-black);
+    color: var(--text-white);
+} */
+
+.about {
+    background-color: var(--text-white);
+}
