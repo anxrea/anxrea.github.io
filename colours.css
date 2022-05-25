@@ -31,6 +31,9 @@ main > button > a {
     color: var(--text-white);
 }
 
+.card1 {
+    background-color: white;
+}
 /* .card-2 {
     background-color: var(--text-white);
 }
