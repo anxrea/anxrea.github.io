@@ -46,3 +46,34 @@ main > button > a {
 .about {
     background-color: var(--text-white);
 }
+
+.footer-container {
+    background-color: black;
+    color: white;
+}
+
+.footer-left {
+    color: white;
+}
+
+.footer-right > ul > li > a {
+    color: white;
+    font-size: 12px;
+    line-height: 1.6rem;
+}
+
+#email {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+}
+
+/* Product Page */
+.d-container {
+    background-color: white;
+}
+

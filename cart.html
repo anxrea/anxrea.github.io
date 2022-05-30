@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel">
+        <h1 class="cart-header">Your Cart</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="cart-items">
+            <img src="/images/cardsagainsthumanity.png" alt="">
+            <span class="cart-text"><h5>Cards Against Humanity</h5><h6>$110.47</h6></span>
+            <div class="counter2">
+                <div class="c-btn2">-</div>
+                <div class="count2">1</div>
+                <div class="c-btn2">+</div>
+            </div>
+            <div class="lnr lnr-trash"></div>
+            
+        </div>
+        <div class="checkout-box">
+            <a class="p-btn" href="#">Checkout</a>
+        </div>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">☰</button>  
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "500px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    
+</body>
+</html>
