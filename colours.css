@@ -3,6 +3,9 @@
     --bg-color: #efe9df;
     --text-white: #fff;
     --text-black: black;
+    --color-gray: #737888;
+    --color-lighter-gray: #e3e5ed;
+    --color-light-gray: #f7f7fa;
 }
 
 body {
@@ -76,4 +79,34 @@ main > button > a {
 .d-container {
     background-color: white;
 }
+ 
+.categories a{
+    background-color: white;
+}
+
+.categories a:hover {
+    background-color: var(--color-red);
+    color: white;
+    transition: 0.5s;
+}
+
+/* CHECKOUT */
+.checkout-left hr {
+    color: #737888;
+}
+
+
+.shipping-form p {
+    color: var(--color-gray);
+}
+
+.shipping-form hr {
+    background-color: var(--color-light-gray);
+}
+
+.shipping-form .p-btn {
+    width: 100%;
+}
+
+
 

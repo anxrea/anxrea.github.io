@@ -14,7 +14,7 @@
         <ul class="header">
             <li class="li-left"><a class="lnr lnr-magnifier icon" href="#"></a></li>
             <li class="li-center"><a href="index.html"><img class="logo" src="/images/logo.png" alt="logo"></a></li>
-            <li class="li-right"><a class="lnr lnr-cart icon" href="#"></a></li>
+            <li class="li-right"><a class="lnr lnr-cart icon" href="cart.html"></a></li>
         </ul>
         <ul class="nav-text">
             <li><a href="#account">ACCOUNT</a></li>
@@ -24,8 +24,29 @@
     </nav>  
 
     <!-- Product List  -->
+<div class="categories">
+        <a href="#">All Products</a>
+        <a href="#">Boardgames</a>
+        <a href="#">Cards</a>
+        <a href="#">Puzzles</a>
+        <a href="#">Family</a>
+        <a href="#">Strategy</a>
+        <a href="#">Themed</a>
+        <a href="#">Party</a>
+        <a href="#">Accessories</a>
+</div>
 <div class="product-list">
     <h2>All Products</h2>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Sort By  <span class="lnr lnr-chevron-down"></span></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Product Type</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Lowest Price</a>
+            <a href="#">Highest Price</a>
+            <a href="#">Top Rated</a>
+        </div>
+      </div>
     <section class="cards">
         <article class="card">
             <div class="text">
@@ -206,7 +227,53 @@
             </a>
         </article>
     </section>
+
+    
+    
 </div>
-       
+<br>
+<br>
+<br>
+<br>
+<div class="footer-container">
+    <div class="footer-left">
+    <p>Receive email updates on products, launches, and events. Unsubscribe anytime.</p>
+    <p><input type="email" name="" id="email" placeholder="Your Email"></p>
+    </div>
+    <div class="footer-right">
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#wishlist">Redeem Gift Cards</a></li>
+        <li><a href="#">Shipping and Returns</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+    </div>
+  
+</div>
+<div class="copyright">&copy; 2018 Board Games and More </div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </body>
 </html>

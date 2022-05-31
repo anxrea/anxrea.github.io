@@ -97,6 +97,10 @@ footer h1 {
     text-transform: uppercase;
 }
 
+.categories {
+    font-family: var(--navtext);
+}
+
 /* Footer */
 .footer-container {
     font-family: var(--navtext);
@@ -186,4 +190,25 @@ footer h1 {
 
 .counter2 .count2 {
     font-family: var(--navtext);
+}
+
+/* CHECKOUT */
+.checkout-left h1 {
+    font-family: var(--header);
+    font-size: 42px;
+}
+
+.checkout-left a {
+    font-family: var(--navtext);
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.shipping-form p {
+    font-family: var(--navtext);
+}
+
+.shipping-form h1 {
+    font-family: var(--header);
+    font-size: 28px;
 }
