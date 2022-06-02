@@ -48,8 +48,59 @@
                 <div class="count">1</div>
                 <div class="c-btn">+</div>
             </div>
-            <a class="p-btn" href="checkout.html">Add to Cart</a>
-            
+
+            <!-- Sidepanel -->
+            <a class="p-btn" href="javascript:void(0)" onclick="openNav()">Add to Cart</a>
+            <div id="mySidepanel" class="sidepanel">
+                <h1 class="cart-header">Your Cart</h1>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  
+          
+            <div class="sidepanel-container">
+                <div class="sidepanel-img">
+                    <img src="/images/cardsagainsthumanity.png" alt="">
+                </div>
+                <div class="sidepanel-header">
+                    <div class="sidepanel-text sp-font">
+                        <h5>Cards Against Humanity</h5>
+                    </div>
+                    <div class="sidepanel-price sp-font">
+                        <h6>$110.47</h6>
+                    </div>
+                    <div class="sidepanel-header2">
+                    <div class="counter2 ">
+                        <div class="c-btn2">-</div>
+                        <div class="count2">1</div>
+                        <div class="c-btn2">+</div>
+                    </div>
+                    <div class="lnr lnr-trash"></div>
+                    </div>
+            </div>
+
+            <div class="sidepanel-bottom">
+                <hr>
+                <div class="sub-amount sp-font">
+                    <span>Subtotal</span><span>$110.47</span>
+                </div>
+                <div class="sub-amount sp-font">
+                    <span>Shipping</span><span>$15.00</span>
+                </div>
+              
+                <div>
+                    <hr>
+                    <div class="total-amount sp-font">
+                        <span>Estimated Total</span><span>$125.47</span>
+                    </div>
+                </div>
+
+            </div>
+           
+
+        
+                <div class="checkout-box">
+                    <a class="p-btn" href="checkout.html">Checkout</a>
+                </div>
+            </div>
         </section>
     </div>
     <div class="d-container">
@@ -131,6 +182,16 @@
 </div>
 <div class="copyright">&copy; 2018 Board Games and More </div>
     </div>
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "500px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
     
 </body>
 </html>

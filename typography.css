@@ -91,6 +91,11 @@ footer h1 {
     font-family: var(--navtext);
     font-size: 24px;
 }
+
+.title {
+    font-family: var(--navtext);
+    font-size: 24px;
+}
 .card .text {
     font-family: var(--navtext);
     font-size: 14px;
@@ -176,11 +181,11 @@ footer h1 {
     font-size: 28px;
 }
 
-.cart-text {
+.sp-font {
     font-family: var(--navtext);
 }
 
-.cart-text h5 {
+.sp-font {
     font-size: 16px;
 }
 
@@ -211,4 +216,24 @@ footer h1 {
 .shipping-form h1 {
     font-family: var(--header);
     font-size: 28px;
+}
+
+.checkout-right h4 {
+    font-family: var(--navtext);
+}
+
+.sum-img {
+    font-family: var(--navtext);
+}
+
+.sum-text {
+    font-family: var(--navtext);
+}
+
+.sub-amount {
+    font-size: 20px;
+}
+
+.total-amount {
+    font-size: 24px
 }
