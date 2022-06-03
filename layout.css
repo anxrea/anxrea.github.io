@@ -465,6 +465,7 @@ width: 45%;
 
 .p-btn {
   text-align: center;
+  cursor: pointer;
 }
 
 .p-btn:hover {
@@ -906,6 +907,28 @@ hr {
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
+}
+
+/* Confirmation */
+.confirmation {
+  display: inline-block;
+  width: 80%;
+  margin: 10%;
+  text-align: center;
+}
+
+.greentick img {
+  width: 15%;
+  margin-top: 5rem;
+}
+
+.confirmation-h2 {
+  margin-top: 0.8rem;
+}
+
+.li-back {
+  margin-top: 15%;
+  text-decoration: underline;
 }
 
 

@@ -9,13 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="checkout">
+<!-- SHIPPING -->
+<div id="shipping" class="checkout tabcontent">
     <div class="checkout-left">
         <h1>Checkout</h1>
         <a href="index.html">Back to Shopping</a>
         <hr>
 
-        <!-- SHIPPING -->
     <div class="shipping-form">
         <h1>Shipping</h1>
         <p>Please enter your shipping details.</p>
@@ -61,7 +61,7 @@
         </div>
         </div>
         <hr>
-        <button class="p-btn">Continue</button>
+        <button class="p-btn" onclick="payment()">Continue</button>
         </div>
     </div>
 
@@ -92,7 +92,138 @@
     </div>
 </div>
 
-<
+<!-- PAYMENT -->
+<div id="payment" class="checkout tabcontent">
+    <div class="checkout-left">
+        <h1>Checkout</h1>
+        <a href="index.html">Back to Shopping</a>
+        <hr>
 
+    <div class="shipping-form">
+        <h1>Payment</h1>
+        <p>Please enter your payment details.</p>
+        <hr />
+        <div class="form">
+            
+        <div class="fields ">
+            <label class="field">
+            <span class="field__label" for="firstname">Name on Card</span>
+            <input class="field__input" type="text" id="firstname" value="" />
+            </label>
+            <label class="field">
+            <span class="field__label" for="lastname">Credit Card Number</span>
+            <input class="field__input" type="text" id="lastname" value="" />
+            </label>
+        </div>
+
+        <div class="fields fields--2">
+            <label class="field">
+            <span class="field__label" for="postcode">Exp (MM/YY)</span>
+            <input class="field__input" type="text" id="exp" />
+            </label>
+            <label class="field">
+            <span class="field__label" for="suburb">CVV</span>
+            <input class="field__input" type="text" id="cvv" />
+            </label>
+    
+        </div>
+        </div>
+        <hr>
+        <button class="p-btn" onclick="done()">Continue</button>
+        </div>
+    </div>
+
+    
+    <div class="checkout-right">
+        <h4>Order Summary</h4>
+        <hr>
+        <div class="sum-img">
+            <img src="/images/cardsagainsthumanity.png" alt="">
+            <span>Cards Against Humanity</span><span>$110.47</span>
+        </div>
+       
+        <div class="sum-bottom">
+            <hr>
+            <div class="sum-text">
+            <span>Subtotal</span><span>$110.47</span>
+            </div>
+            <div class="sum-text">
+                <span>Shipping</span><span>$15.00</span>
+            </div>
+            <hr>
+            <div class="sum-text">
+                <span>Order Total</span>
+                <span>$125.47</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- CONFIRMATION -->
+<div id="done" class="confirmation tabcontent">
+    <div class="confirmation-h1">
+        <p>Your order has been completed</p>
+    </div>
+    <div class="confirmation-h2">
+        <p>Thank you for shopping with us</p>
+    </div>
+    <div class="greentick">
+        <img src="/images/greentick.png" alt="">
+    </div>
+    <div class="li-back">
+        <a href="index.html">Back to Shopping</a>
+    </div>
+
+</div>
+
+<script>
+    function shipping() {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      /*
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      */
+      document.getElementById('shipping').style.display = "flex";
+      //document.getElementById('btnShipping').style.backgroundColor = "green";
+    }
+    function payment() {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      // tablinks = document.getElementsByClassName("tablink");
+      // for (i = 0; i < tablinks.length; i++) {
+      //   tablinks[i].style.backgroundColor = "";
+      // }
+      document.getElementById('payment').style.display = "flex";
+      // document.getElementById('btnPayment').style.backgroundColor = "blue";
+    }
+    function done() {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      // tablinks = document.getElementsByClassName("tablink");
+      // for (i = 0; i < tablinks.length; i++) {
+      //   tablinks[i].style.backgroundColor = "";
+      // }
+      document.getElementById('done').style.display = "block";
+      // document.getElementById('btnDone').style.backgroundColor = "orange";
+    }
+    function back() {
+      window.location="index.html";
+    }
+    shipping();
+    //
+  </script>
 </body>
 </html>
