@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Document</title>
 </head>
 <body>
+    <div class="main-container">
     <nav>
         <ul class="header">
             <li class="li-left"><a class="lnr lnr-magnifier icon" href="#"></a></li>
@@ -41,7 +44,8 @@
             <article class="p-content">
                 <div class="p-size"><h2>Cards Against Humanity</h2><h3>$110.47</h3>
                 </div>
-                <div><a href="#" class="lnr lnr-heart text-right heart"></a></div>
+                <span><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></span>
+               
             </article> 
             <div class="counter">
                 <div class="c-btn">-</div>
@@ -51,7 +55,7 @@
 
             <!-- Sidepanel -->
             <a class="p-btn" href="javascript:void(0)" onclick="openNav()">Add to Cart</a>
-            <div id="mySidepanel" class="sidepanel">
+            <div id="mySidepanel" class="sidepanel sidepanel-close">
                 <h1 class="cart-header">Your Cart</h1>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   
@@ -103,12 +107,18 @@
             </div>
         </section>
     </div>
-    <div class="d-container">
+    <div class="details-box">
+        <h4 class="details-head">Details</h4>
+        <p>Card Against Humanity is a party game for horrible people. Each round, one player asks a question from a black card, and everyone else answers with their funniest white card.</p>
+        </div>
+</div>
+
+    <!-- <div class="d-container">
         <div class="d-text">
         <h4 class="d-head">Details</h4>
         <p>Card Against Humanity is a party game for horrible people. Each round, one player asks a question from a black card, and everyone else answers with their funniest white card.</p>
         </div>
-    </div>
+    </div> -->
     <div class="outer2">
         <h4 class="p-head">You May Also Like...</h4>
         <div class="bottom-cards">
@@ -180,17 +190,26 @@
     </div>
 
 </div>
+
 <div class="copyright">&copy; 2018 Board Games and More </div>
     </div>
-    
+</div>   
     <script>
         function openNav() {
-          document.getElementById("mySidepanel").style.width = "500px";
-        }
+    document.getElementById("mySidepanel").classList.remove("sidepanel-close");
+    document.getElementById("mySidepanel").classList.add("sidepanel-show");
+  }
+  function closeNav() {
+    document.getElementById("mySidepanel").classList.remove("sidepanel-show");
+    document.getElementById("mySidepanel").classList.add("sidepanel-close");
+  }
+        // function openNav() {
+        //   document.getElementById("mySidepanel").style.width = "500px";
+        // }
         
-        function closeNav() {
-          document.getElementById("mySidepanel").style.width = "0";
-        }
+        // function closeNav() {
+        //   document.getElementById("mySidepanel").style.width = "0";
+        // }
         </script>
     
 </body>

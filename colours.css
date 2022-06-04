@@ -21,6 +21,10 @@ a {
     color: var(--text-black);
 }
 
+.fa-heart {
+    color: var(--color-red);
+  }
+
 main > button > a {
     color: var(--text-white);
 }

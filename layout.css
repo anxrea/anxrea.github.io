@@ -76,13 +76,6 @@ a {
 
 /* Best Sellers */
 
-/* @media all and (min-width:768px) { 
-  .container-block {padding: 4% 8%;}
-}
-@media all and (max-width:767px) { 
-  .container-block {padding: 11% 8%;} 
-} */
-
 .outer1 {
   font-family: 'jeko-regular';
   width: 80%; 
@@ -217,6 +210,12 @@ padding: 20px;
   float: right;
 }
 
+i {
+  float: right;
+}
+
+
+
 /* Dropdown Menu (SORT) */
 .dropbtn {
   background-color: white;
@@ -291,6 +290,10 @@ transform: scale(1.1);
 transition: 0.5s;
 }
 
+.card a {
+  text-align: center;
+}
+
 .card .text {
 padding: 12px 12px 12px;
 margin: 0;
@@ -303,16 +306,6 @@ color: white;
 padding: 10px;
 width: 100%;
 }
-
-.card:nth-child(1) {
-/*width: 520px;*/
-}
-
-/* 
-.card:hover {
-transform: scale(1.05);
-box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.2)
-} */
 
 .product-list {
 font-family: 'jeko-regular';
@@ -347,13 +340,6 @@ font-size: 26px;
 transform: scale(1.3);
 transition: 0.5s;
 }
-
-/* @media all and (min-width:768px) { 
-.container-block {padding: 4% 8%;}
-}
-@media all and (max-width:767px) { 
-.container-block {padding: 11% 8%;} 
-} */
 
 /* Footer */
 .footer-container {
@@ -504,6 +490,16 @@ width: 45%;
   color: #202020;
  }
 
+ .details-box {
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+.details-head {
+  margin-bottom: 20px;
+}
+
 .d-container {
   margin-top: -3rem;
 }
@@ -605,6 +601,13 @@ hr {
   transition: 0.5s;
 }
 
+.sidepanel-show {
+  width: 40vw;
+}
+.sidepanel-close {
+  width: 0;
+}
+
 .sidepanel-container {
   display: flex;
   flex-wrap: wrap;
@@ -662,7 +665,7 @@ hr {
 .sub-amount {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .total-amount {
@@ -915,6 +918,7 @@ hr {
   width: 80%;
   margin: 10%;
   text-align: center;
+
 }
 
 .greentick img {
@@ -931,6 +935,12 @@ hr {
   text-decoration: underline;
 }
 
+.main-container {
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* IPHONE13 */
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
@@ -939,6 +949,11 @@ hr {
     margin-left: 0;
     margin-right: 0;
   }
+
+.center {
+  width: 100%;
+}
+
   .sidepanel-show {
     width: 100vw;
   }
@@ -957,5 +972,86 @@ hr {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .about .cardflower {
+    justify-self: center;
+  } 
+
+  .sidepanel-img img {
+    margin-top: 20%;
+    width: 20vw;
+  }
+
+  .checkout-left {
+    width: 100%;
+  }
+
+  .checkout-right {
+    display: none;
+  }
+
+  .categories {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .categories a {
+    padding-bottom: 0;
+  }
+
+  .p-container {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .p-left {
+    width: 100%;
+  }
+
+  .p-right {
+    width: 100%
+  }
+
+  .counter {
+    margin-bottom: 5%;
+  }
+
+  .outer2 {
+    margin-top: 100%;
+  }
+
+  .p-content {
+    margin-bottom: -10%;
+  }
+
+  .details-box {
+    width: 80%;
+  }
+
+  .confirmation {
+    margin-top: 30%;
+  }
+
+  .confirmation-h1 {
+    font-size: 25px;
+  }
+
+  .confirmation-h2 {
+    font-size: 20px;
+  }
+
+  .greentick img {
+    width: 60%;
+  }
+
+  .li-back {
+    margin-top: 80%;
   }
 }
