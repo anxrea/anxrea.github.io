@@ -57,6 +57,7 @@ a {
   text-decoration: none;
 }
 
+/* Banner & Shop Now button */
 .center {
   display: block;
   margin-left: auto;
@@ -74,7 +75,7 @@ a {
   opacity: 0.7;
 }
 
-/* Best Sellers */
+/* Best Sellers & New Arrival */
 
 .outer1 {
   font-family: 'jeko-regular';
@@ -89,6 +90,7 @@ a {
     margin-bottom: 1em;
 }
 
+/* Adds slidebar to Product cards */
 .cards1 {
   display: flex;
   flex-direction: row;
@@ -214,8 +216,6 @@ i {
   float: right;
 }
 
-
-
 /* Dropdown Menu (SORT) */
 .dropbtn {
   background-color: white;
@@ -252,7 +252,9 @@ i {
 
 .dropdown a:hover {background-color: #ddd;}
 
-.show {display: block;}
+.show {
+  display: block;
+}
 
 .cards {
 display: flex;
@@ -372,8 +374,6 @@ border-radius: 50px;
 .copyright {
 font-size: 12px;
 width: 100%;
-
-/* text-align: center; */
 padding-bottom: 30px;
 padding-left: 10%;
 }
@@ -418,7 +418,6 @@ padding-top: 0.3rem;
 display: flex;
 flex-flow: column;
 width: 45%;
-/* align-items: flex-start; */
 }
 
 .p-content {
@@ -676,8 +675,8 @@ hr {
 }
 
 .sidepanel-bottom {
- padding-right: 25px;
- margin-top: 40%;
+  padding-right: 25px;
+  margin-top: 40%;
 }
 
 .sidepanel-bottom hr {
@@ -716,11 +715,6 @@ hr {
 .openbtn:hover {
   background-color:#444;
 }
-/* 
-.cart-items .lnr {
-  margin-left: 4.8rem;
-  margin-right: 1.5rem;
-} */
 
 .counter2 {
   width: 50%;
@@ -1023,6 +1017,14 @@ hr {
     margin-bottom: 5%;
   }
 
+  .sidepanel-bottom {
+    margin-top: 80%;
+  }
+
+  .sidepanel-container {
+    padding-right: 10px;
+  }
+
   .outer2 {
     margin-top: 100%;
   }
@@ -1054,4 +1056,5 @@ hr {
   .li-back {
     margin-top: 80%;
   }
+
 }

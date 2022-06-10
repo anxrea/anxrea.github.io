@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -177,53 +178,5 @@
 
 </div>
 
-<script>
-    function shipping() {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      /*
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-      }
-      */
-      document.getElementById('shipping').style.display = "flex";
-      //document.getElementById('btnShipping').style.backgroundColor = "green";
-    }
-    function payment() {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      // tablinks = document.getElementsByClassName("tablink");
-      // for (i = 0; i < tablinks.length; i++) {
-      //   tablinks[i].style.backgroundColor = "";
-      // }
-      document.getElementById('payment').style.display = "flex";
-      // document.getElementById('btnPayment').style.backgroundColor = "blue";
-    }
-    function done() {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      // tablinks = document.getElementsByClassName("tablink");
-      // for (i = 0; i < tablinks.length; i++) {
-      //   tablinks[i].style.backgroundColor = "";
-      // }
-      document.getElementById('done').style.display = "block";
-      // document.getElementById('btnDone').style.backgroundColor = "orange";
-    }
-    function back() {
-      window.location="index.html";
-    }
-    shipping();
-    //
-  </script>
 </body>
 </html>
